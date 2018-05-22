@@ -1,0 +1,17 @@
+<launch>
+  <node 
+    pkg="turtlesim"
+    name="play_turtle"
+    type="turtlesim_node"
+    ns="sim1"
+  />
+  <node 
+    pkg="rosbag"
+    name="player"
+    type="play"
+    output="screen"
+    args="--clock /home/tak/triangle.bag"
+    ns="sim1"
+  />
+</launch>
+

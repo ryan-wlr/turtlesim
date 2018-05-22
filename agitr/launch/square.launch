@@ -1,0 +1,12 @@
+<launch>
+  <node
+    pkg="turtlesim"
+    type="turtlesim_node"
+    name="turtle"
+  />
+  <node
+    pkg="turtlesim"
+    type="draw_square"
+    name="draw"
+  />
+</launch>
